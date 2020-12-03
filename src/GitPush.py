@@ -1,12 +1,6 @@
-from git import Repo,remote
+from github import Github
 
-rw_dir = 'D:\Proyectos\GitHub\Covid-peru'
-repo = Repo(rw_dir)
+g = Github('','')
 
-
-
-origin = repo.remote(name='origin')
-
-origin.Commit.message('cambio')
-origin.pull()
-origin.push()
+repo = g.get_repo('saulo9220/Covid-peru')
+contents = repo.get_contents("src/confirmados.csv")
