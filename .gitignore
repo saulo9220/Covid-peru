@@ -1,3 +1,3 @@
-.UdateData.py
 .data/confirmados.csv
 .data/fallecidos.csv
+src/UpdateData.py
